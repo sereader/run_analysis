@@ -8,13 +8,13 @@ run_analysis.R contains a script that reads in data from the "UCI HAR Dataset" f
 
 Background
 ==========
-The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. A training set and a test set were merged to create the "tidydata" set.
+The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. A training set of data on subjects and activities and a test set of data on subjects and activities were merged to create the "tidydata" set.
 
 *For more detail on experimental design and contents of the "UCI HAR Dataset" folder, consult original README.txt within that folder
 
 Features
 ========
-"tidydata" contains only averages of the mean and standard deviations of measurements taken by the accelerometer and gyroscope. A total of 561 variables were included in the original data for both training and test sets, but only 66 of those dealt specifically with the mean or standard deviation of a particular measurement.
+"tidydata" contains only averages of the mean and standard deviations of measurements taken by the accelerometer and gyroscope. A total of 561 variables were included in the original data for both training and test sets, but only 66 of those recorded specifically the mean or standard deviation of a particular measurement. Subjects may have been observed performing the same activity multiple times; Subject #6 may have been observed "WALKING" more than once, for example. The average of each of these 66 variables was then calculated for each subject and the activity performed by that subject; the result is contained in "tidydata", with each row noting the subject, the activity, and then the average for each variable across however many observations of that subject/activity pairing there were in the original data.
 
 *For more detail on the variables in "tidydata", consult Codebook.md in the GitHub repo. For more detail on the raw measurements manipulated for "tidydata", consult fetures.txt and features_info.txt in the "UCI HAR Dataset" folder
 
