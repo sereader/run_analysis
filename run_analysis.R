@@ -30,11 +30,12 @@ names(x_test) <- features$V2
 names(y_test) <- "Index"
 names(subject_test) <- "Subject"
 
+##combine train and test sets
 traintest <- rbind(x_train, x_test)
 activities <- rbind(y_train, y_test)
 subjects <- rbind(subject_train, subject_test)
 
-##subset mean and std cols in merged data frame
+##subset mean and std cols in combined traintest data frame
 meanCols <- grepl("mean()", names(traintest), fixed=TRUE)
 stdCols <- grepl("std()", names(traintest), fixed=TRUE)
 columns <- meanCols == TRUE | stdCols == TRUE
