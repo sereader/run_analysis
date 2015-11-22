@@ -1,6 +1,8 @@
 Human Activity Recognition Using Smartphones Dataset (Samsung Galaxy S II)
 ====================================================
 
+**RECOMMEND VIEWING IN EITHER "RAW" OR "BLAME" VIEW ON GITHUB FOR FORMATTING**
+
 Subject       Integer
         Subject Number
                 1..30
