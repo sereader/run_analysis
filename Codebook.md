@@ -272,7 +272,7 @@ fBodyBodyGyroMag-std()      numeric
         Average of standard deviation of magnitude of three-dimensional frequency domain signals for body angular velocity (magnitude calculated using Euclidean norm)
                 Normalized and bounded within [-1,1]
                 
-fBodyodyGyroJerkMag-mean() numeric
+fBodyBodyGyroJerkMag-mean() numeric
         Average of mean of magnitude of three-dimensional frequency domain Jerk signals for body angular velocity (magnitude calculated using Euclidean norm)
                 Normalized and bounded within [-1,1]
                 
