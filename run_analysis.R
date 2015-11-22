@@ -49,6 +49,7 @@ col_idx <- grep("Activity", fixed = TRUE, names(mergedData))
 halt <- ncol(mergedData) - 1
 mergedData <- mergedData[, c(2, col_idx, (3:halt))]
 
+##melt and dcast mergedData to return mean of each column by Subject and Activity
 toAve <- names(mergedData[,3:ncol(mergedData)])
 mergedMelt <- melt(mergedData, id=c("Subject", "Activity"), measure.vars=toAve)
 tidydata <- dcast(mergedMelt, Subject + Activity ~ variable, mean)
